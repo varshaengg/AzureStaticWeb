@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Catalyst Educations - AI & Development Courses</title>
+    <meta name="description" content="Transform your career with comprehensive AI and development courses designed for students, freshers, and beginners.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        /* Additional custom styles */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(to bottom, white, rgb(249, 250, 251));
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(to bottom right, rgb(59, 130, 246), rgb(168, 85, 247), rgb(249, 115, 22));
+        }
+        
+        .dot-pattern {
+            background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="gradient-bg">
+    
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo & Brand -->
+                <div class="flex items-center gap-3">
+                    <img src="./src/imports/short_logo.PNG" alt="Universal Catalyst Educations" class="h-14 w-auto">
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">Universal Catalyst</h1>
+                        <p class="text-xs font-semibold tracking-wider">
+                            <span class="text-blue-900">LEARN</span>
+                            <span class="text-gray-400 mx-1">•</span>
+                            <span class="text-orange-500">BUILD</span>
+                            <span class="text-gray-400 mx-1">•</span>
+                            <span class="text-blue-900">INNOVATE</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#" class="text-gray-700 hover:text-purple-600 transition-colors font-medium">
+                        Home
+                    </a>
+                    <a href="#courses" class="text-gray-700 hover:text-purple-600 transition-colors font-medium">
+                        Courses
+                    </a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition-colors font-medium">
+                        Contact
+                    </a>
+                </nav>
+
+                <!-- CTA Button -->
+                <a href="#contact" class="hidden md:inline-block bg-blue-500 text-white px-6 py-2.5 rounded-lg hover:bg-blue-600 hover:shadow-lg transition-all font-medium">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="relative overflow-hidden hero-gradient">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 dot-pattern"></div>
+        </div>
+
+        <div class="container mx-auto px-4 py-8 md:py-20 pb-12 md:pb-32 relative">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-white space-y-4 md:space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-white/20">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-orange-300"></i>
+                        <span class="text-xs md:text-sm">Empower Your Future with AI</span>
+                    </div>
+                    
+                    <h1 class="text-3xl md:text-6xl font-bold leading-tight">
+                        Master AI & Development Skills
+                    </h1>
+                    
+                    <p class="text-base md:text-xl text-blue-50 leading-relaxed">
+                        Transform your career with our comprehensive online courses designed for students, freshers, and beginners. Learn at your own pace from industry experts.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 md:gap-4 pt-2 md:pt-4">
+                        <a href="#courses" class="inline-flex items-center justify-center gap-2 px-4 py-2 md:px-6 md:py-3 text-base md:text-lg font-medium bg-orange-500 text-white rounded-lg hover:bg-orange-600 shadow-lg hover:shadow-xl transition-all">
+                            <i data-lucide="graduation-cap" class="w-4 h-4 md:w-5 md:h-5"></i>
+                            Explore Courses
+                        </a>
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2 px-4 py-2 md:px-6 md:py-3 text-base md:text-lg font-medium border-2 border-white text-white bg-white/10 hover:bg-white hover:text-blue-600 backdrop-blur-sm rounded-lg transition-all">
+                            Get in Touch
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-3 md:gap-6 pt-4 md:pt-8 border-t border-white/20">
+                        <div>
+                            <div class="text-xl md:text-3xl font-bold">3</div>
+                            <div class="text-base text-white font-medium">Courses</div>
+                        </div>
+                        <div>
+                            <div class="text-xl md:text-3xl font-bold">100%</div>
+                            <div class="text-base text-white font-medium">Online</div>
+                        </div>
+                        <div>
+                            <div class="text-xl md:text-3xl font-bold">24/7</div>
+                            <div class="text-base text-white font-medium">Access</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Image -->
+                <div class="relative hidden md:block">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1618758992779-47151c11b39c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMGxlYXJuaW5nJTIwQUklMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc3NzEyNjM4MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Students learning AI technology" class="w-full h-auto object-cover">
+                        <!-- Gradient Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-purple-900/50 to-transparent"></div>
+                    </div>
+                    
+                    <!-- Floating Card -->
+                    <div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4 max-w-xs hidden md:block">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-orange-100 p-3 rounded-lg">
+                                <i data-lucide="graduation-cap" class="w-6 h-6 text-orange-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Start Learning Today</div>
+                                <div class="text-sm text-gray-600">Beginner-friendly courses</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Wave -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z" fill="rgb(249, 250, 251)" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-12 px-4 bg-gray-50">
+        <div class="container mx-auto max-w-7xl">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <span class="inline-block mb-4 bg-orange-100 text-orange-700 px-4 py-1.5 rounded-full text-sm font-medium">
+                    Our Courses
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Choose Your Learning Path
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive courses designed for students, freshers, and beginners to kickstart their career in AI and development
+                </p>
+            </div>
+
+            <!-- Courses Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Course 1: AI Fundamentals -->
+                <div class="bg-white border-2 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-blue-300">
+                    <!-- Course Image -->
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1749006590639-e749e6b7d84c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBSSUyMGhvbG9ncmFtJTIwdGFibGV0JTIwbmV0d29yayUyMGNvbm5lY3Rpb258ZW58MXx8fHwxNzc3MTI3NTc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="AI Fundamentals" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute top-4 right-4">
+                            <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-blue-100 text-blue-700">Beginner</span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 p-3 rounded-lg bg-blue-50">
+                            <i data-lucide="book-open" class="w-6 h-6 text-blue-600"></i>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">AI Fundamentals</h3>
+                        <p class="text-base text-muted-foreground leading-relaxed mb-4">
+                            Build a strong foundation in Artificial Intelligence. Perfect for beginners who want to understand AI concepts, machine learning basics, and real-world applications.
+                        </p>
+
+                        <!-- Course Info -->
+                        <div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="clock" class="w-4 h-4"></i>
+                                <span>8 Weeks</span>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="bar-chart" class="w-4 h-4"></i>
+                                <span>12 Modules</span>
+                            </div>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="space-y-2 mb-6">
+                            <div class="font-semibold text-sm text-gray-700">What you'll learn:</div>
+                            <ul class="space-y-1.5">
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mt-0.5 flex-shrink-0 text-blue-600"></i>
+                                    <span>Introduction to AI & ML</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mt-0.5 flex-shrink-0 text-blue-600"></i>
+                                    <span>Python for AI</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mt-0.5 flex-shrink-0 text-blue-600"></i>
+                                    <span>Data Processing Basics</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mt-0.5 flex-shrink-0 text-blue-600"></i>
+                                    <span>Neural Networks Fundamentals</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all w-full h-9 px-4 py-2 bg-gray-900 text-white hover:bg-gray-800">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 2: .NET/API Development -->
+                <div class="bg-white border-2 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-purple-300">
+                    <!-- Course Image -->
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556792189-55769c8dfbac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9ncmFtbWluZyUyMGNvZGUlMjBkZXZlbG9wbWVudHxlbnwxfHx8fDE3NzcwODc3MjV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt=".NET/API Development" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute top-4 right-4">
+                            <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-purple-100 text-purple-700">Intermediate</span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 p-3 rounded-lg bg-purple-50">
+                            <i data-lucide="code" class="w-6 h-6 text-purple-600"></i>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">.NET/API Development</h3>
+                        <p class="text-base text-muted-foreground leading-relaxed mb-4">
+                            Master modern web development with .NET framework and RESTful API creation. Learn to build scalable, secure backend applications and microservices.
+                        </p>
+
+                        <!-- Course Info -->
+                        <div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="clock" class="w-4 h-4"></i>
+                                <span>10 Weeks</span>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="bar-chart" class="w-4 h-4"></i>
+                                <span>15 Modules</span>
+                            </div>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="space-y-2 mb-6">
+                            <div class="font-semibold text-sm text-gray-700">What you'll learn:</div>
+                            <ul class="space-y-1.5">
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mt-0.5 flex-shrink-0 text-purple-600"></i>
+                                    <span>C# Programming</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mt-0.5 flex-shrink-0 text-purple-600"></i>
+                                    <span>ASP.NET Core Fundamentals</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mt-0.5 flex-shrink-0 text-purple-600"></i>
+                                    <span>RESTful API Design</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mt-0.5 flex-shrink-0 text-purple-600"></i>
+                                    <span>Semantic Kernel for AI Integration</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all w-full h-9 px-4 py-2 bg-gray-900 text-white hover:bg-gray-800">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 3: AI Advanced -->
+                <div class="bg-white border-2 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-blue-300">
+                    <!-- Course Image -->
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1773558057689-847e19466840?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZHZhbmNlZCUyMEFJJTIwcm9iaXRpY3MlMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc3NzEyNzMxMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="AI Advanced" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute top-4 right-4">
+                            <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-blue-100 text-blue-700">Advanced</span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 p-3 rounded-lg bg-blue-50">
+                            <i data-lucide="brain" class="w-6 h-6 text-blue-600"></i>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">AI Advanced</h3>
+                        <p class="text-base text-muted-foreground leading-relaxed mb-4">
+                            Take your AI skills to the next level with advanced topics including deep learning, computer vision, NLP, and deployment of AI models in production environments.
+                        </p>
+
+                        <!-- Course Info -->
+                        <div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="clock" class="w-4 h-4"></i>
+                                <span>12 Weeks</span>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="bar-chart" class="w-4 h-4"></i>
+                                <span>18 Modules</span>
+                            </div>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="space-y-2 mb-6">
+                            <div class="font-semibold text-sm text-gray-700">What you'll learn:</div>
+                            <ul class="space-y-1.5">
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mt-0.5 flex-shrink-0 text-blue-600"></i>
+                                    <span>Deep Learning Architectures</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mt-0.5 flex-shrink-0 text-blue-600"></i>
+                                    <span>Computer Vision & CNNs</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mt-0.5 flex-shrink-0 text-blue-600"></i>
+                                    <span>Natural Language Processing</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 mt-0.5 flex-shrink-0 text-blue-600"></i>
+                                    <span>Generative AI & LLMs</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all w-full h-9 px-4 py-2 bg-gray-900 text-white hover:bg-gray-800">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="mt-16 text-center">
+                <p class="text-gray-600 mb-4">
+                    Not sure which course is right for you?
+                </p>
+                <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all h-10 px-6 border-2 border-gray-300 bg-white text-gray-900 hover:bg-gray-50 hover:border-gray-400">
+                    Contact Us for Guidance
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 px-4 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <!-- Section Header -->
+            <div class="text-center mb-10">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Get in Touch
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Have questions about our courses? We're here to help you start your learning journey
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Email Card -->
+                <div class="bg-white border-2 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center mb-3">
+                        <i data-lucide="mail" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-1">Email</h3>
+                    <p class="text-sm text-muted-foreground mb-4">Reach out to us anytime</p>
+                    <a href="mailto:courses@aionline.com" class="text-2xl font-semibold text-gray-900 hover:text-orange-600 transition-colors break-all">
+                        courses@aionline.com
+                    </a>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="bg-white border-2 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center mb-3">
+                        <i data-lucide="phone" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-1">Phone</h3>
+                    <p class="text-sm text-muted-foreground mb-4">Reach out to us anytime</p>
+                    <a href="tel:+15551234567" class="text-2xl font-semibold text-gray-900 hover:text-orange-600 transition-colors break-all">
+                        +1 (555) 123-4567
+                    </a>
+                </div>
+            </div>
+
+            <!-- Additional Info Card -->
+            <div class="mt-12 max-w-4xl mx-auto bg-gradient-to-br from-orange-50 to-orange-100 border-2 border-orange-200 rounded-lg p-8">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-orange-600 p-2 rounded-lg">
+                                <i data-lucide="message-square" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">
+                                Quick Response Guaranteed
+                            </h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Our admissions team typically responds within 24 hours. Get personalized course recommendations and answers to all your questions.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-orange-600 mt-1"></i>
+                            <div>
+                                <div class="font-semibold text-gray-900">Office Hours</div>
+                                <div class="text-gray-700">Monday - Friday: 9 AM - 6 PM EST</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="message-square" class="w-5 h-5 text-orange-600 mt-1"></i>
+                            <div>
+                                <div class="font-semibold text-gray-900">Response Time</div>
+                                <div class="text-gray-700">Within 24 hours on business days</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-6">
+                <!-- Brand -->
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="./src/imports/short_logo.PNG" alt="Universal Catalyst Educations" class="h-12 w-auto">
+                        <span class="text-xl font-bold text-white">Universal Catalyst</span>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Empowering the next generation of AI and development professionals through quality online education.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Courses</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="#courses" class="hover:text-orange-400 transition-colors">
+                                AI Fundamentals
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#courses" class="hover:text-orange-400 transition-colors">
+                                .NET/API Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#courses" class="hover:text-orange-400 transition-colors">
+                                AI Advanced
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Company</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="#" class="hover:text-orange-400 transition-colors">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-orange-400 transition-colors">
+                                Our Instructors
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="hover:text-orange-400 transition-colors">
+                                Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-orange-400 transition-colors">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Connect With Us</h3>
+                    <div class="flex gap-3">
+                        <a href="#" class="bg-gray-800 p-2 rounded-lg hover:bg-teal-600 transition-colors" aria-label="Facebook">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 p-2 rounded-lg hover:bg-teal-400 transition-colors" aria-label="Twitter">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 p-2 rounded-lg hover:bg-teal-700 transition-colors" aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 p-2 rounded-lg hover:bg-pink-600 transition-colors" aria-label="Instagram">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-sm text-gray-400">
+                            Follow us for updates and learning tips
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+                    <p>© 2026 Universal Catalyst Educations. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-orange-400 transition-colors">
+                            Privacy Policy
+                        </a>
+                        <a href="#" class="hover:text-orange-400 transition-colors">
+                            Terms of Service
+                        </a>
+                        <a href="#" class="hover:text-orange-400 transition-colors">
+                            Cookie Policy
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
